@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header1{
+    background-color: rgba(61, 61, 61, 0.808);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.contenedor{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lateral{
+    width: 15%;
+    background-color: beige;
+    padding: 2rem;
+    border-right: 1px solid #ccc;
+}
+
+.Main1{
+    width: 85%;
+    padding: 2rem;
+    background-color: rgb(245, 245, 204);
+}
+
+.lateral h2{
+    margin-bottom: 1rem;
+}
+
+.nave ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.nave ul li a{
+    text-decoration: none;
+    color: #333;
+}
+
+.nave ul li a:hover{
+    color: #25cc04be;
+}
+
+.lateral hr{
+    margin: 1rem 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+.Pie-pagina{
+    background-color: rgba(61, 61, 61, 0.808);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+img{
+    width: 45vh;
+    height: auto;
+    display: block;
+    margin-top: 2rem;
+    margin-left: 60px;
+    margin-right: auto;
+    border-radius: 30px;
+}
+
+.Main1 h3{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.Ramos{
+    width: 25vh;
+    height: auto;
+    display: block;
+    margin-top: 2rem;
+    margin-left: 60px;
+    margin-right: auto;
+    border-radius: 30px;
+}
+
+
+.nave2 ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.nave2 ul li a{
+    text-decoration: none;
+    color: beige;
+}
+
+.nave2 ul li a:hover{
+    color: #058b0c59;
+}
+
+.interes1 li{
+    margin-left: 2rem;
+    list-style: square;
+}
+
+.interes1 p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.Historia li{
+    margin-left: 2rem;
+    list-style: square;
+}
+
+.Historia p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.proceres li{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    list-style: square;
+}
+
+.proceres p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.ines{
+    width: 25vh;
+    height: auto;
+    display: block;
+    margin-top: 2rem;
+}
+
+footer a{
+    padding: 20px;
+    color: beige;
+}
+
+footer a:hover{
+    color: #25cc0498;
+}
+
+@media (max-width: 768px){
+    .contenedor{
+        flex-direction: column;
+    }
+    .lateral{
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+    .nave ul{
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+}

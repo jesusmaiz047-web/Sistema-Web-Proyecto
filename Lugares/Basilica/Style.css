@@ -4,19 +4,27 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-mar: #1B365D;
+    --color-tierra: #A64B2A;
+    --color-pergamino: #F9F7F2;
+    --color-texto: #2D2D2D;
+}
+
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
     line-height: 1.6;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #f5f5f5;
+    background-color: var(--color-pergamino);
+    color: var(--color-texto);
 }
 
 /*Header*/
 .header1 {
     color: white;
-    background-color: rgb(43, 43, 43);
+    background-color: var(--color-mar);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -63,7 +71,7 @@ body {
     height: 2px;
     left: 0;
     bottom: -5px;
-    background-color: #ff9800;
+    background-color: var(--color-tierra);
     transition: 0.3s ease;
 }
 
@@ -117,7 +125,7 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #111;
+    background-color: var(--color-mar);
     list-style: none;
     padding: 0;
     margin: 0;
@@ -404,14 +412,14 @@ body {
 /* FOOTER */
 
 footer {
-    background-color: #2c3e50;
+    background-color: var(--color-mar);
     color: #ffffff;
     padding: 30px 50px;
     /* Aumentamos el padding lateral para que no toque el borde */
     text-align: left;
     /* Alineación hacia la izquierda */
     width: 100%;
-    border-top: 4px solid #8e44ad;
+    border-top: 4px solid var(--color-tierra);
 }
 
 footer p {

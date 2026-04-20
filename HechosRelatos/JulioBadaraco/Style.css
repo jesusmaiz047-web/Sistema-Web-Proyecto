@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@ span {
     font-style: italic;
 }
 
-body{
+body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
     line-height: 1.6;
     display: flex;
@@ -27,7 +27,7 @@ a {
 
 
 /*Header*/
-.header1{
+.header1 {
     color: white;
     background-color: rgb(43, 43, 43);
     position: sticky;
@@ -54,17 +54,17 @@ a {
     margin: 0 auto;
     max-width: 1200px;
     font-family: sans-serif;
-    
+
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 2rem ;
+    gap: 2rem;
 }
 
 .nav-links a {
-    text-decoration: none; 
+    text-decoration: none;
     font-size: 700;
     color: aliceblue;
     text-decoration: none;
@@ -74,7 +74,7 @@ a {
 
 }
 
-.nav-links a::after{
+.nav-links a::after {
     content: "";
     position: absolute;
     width: 0px;
@@ -85,12 +85,12 @@ a {
     transition: 0.3s ease;
 }
 
-.nav-links a:hover::after{
+.nav-links a:hover::after {
     width: 100%;
 }
 
 
-.nav-links li:hover{
+.nav-links li:hover {
     transform: scale(1.1);
     transition: 0.15s;
 }
@@ -158,18 +158,18 @@ form input {
 }
 
 form button {
- background-color: transparent;
- border: 0;
- width: 50px;
- height: 50px;
- cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
 }
 
 
 
 #hero {
     min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Diseños/portada.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Diseños/portada.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -188,7 +188,7 @@ form button {
     animation: fadeInDown 1s ease;
 }
 
-#hero p{
+#hero p {
     font-size: 1.3rem;
     opacity: 0.9;
     animation: fadeInUp 1s ease;
@@ -246,7 +246,8 @@ form button {
 /* Párrafo */
 .contenido-reseña p {
     max-width: 800px;
-    margin: 0 auto; /* centra el párrafo */
+    margin: 0 auto;
+    /* centra el párrafo */
     font-size: 1.1rem;
     line-height: 1.7;
     color: #555;
@@ -259,6 +260,7 @@ form button {
         opacity: 0;
         transform: translateY(-30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -270,6 +272,7 @@ form button {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);

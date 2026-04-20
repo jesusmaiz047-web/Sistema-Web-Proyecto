@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
     line-height: 1.6;
     display: flex;
@@ -14,7 +14,7 @@ body{
 }
 
 /*Header*/
-.header1{
+.header1 {
     color: white;
     background-color: rgb(43, 43, 43);
     position: sticky;
@@ -36,17 +36,17 @@ body{
     margin: 0 auto;
     max-width: 1200px;
     font-family: sans-serif;
-    
+
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 2rem ;
+    gap: 2rem;
 }
 
 .nav-links a {
-    text-decoration: none; 
+    text-decoration: none;
     font-size: 700;
     color: aliceblue;
     text-decoration: none;
@@ -56,7 +56,7 @@ body{
 
 }
 
-.nav-links a::after{
+.nav-links a::after {
     content: "";
     position: absolute;
     width: 0px;
@@ -67,12 +67,12 @@ body{
     transition: 0.3s ease;
 }
 
-.nav-links a:hover::after{
+.nav-links a:hover::after {
     width: 100%;
 }
 
 
-.nav-links li:hover{
+.nav-links li:hover {
     transform: scale(1.1);
     transition: 0.15s;
 }
@@ -81,7 +81,7 @@ body{
 
 #hero {
     min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Diseños/portada.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Diseños/portada.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -100,7 +100,7 @@ body{
     animation: fadeInDown 1s ease;
 }
 
-#hero p{
+#hero p {
     font-size: 1.3rem;
     opacity: 0.9;
     animation: fadeInUp 1s ease;
@@ -171,14 +171,14 @@ body{
     left: 10px;
     width: calc(100vw - 20px);
     height: calc(100vh - 20px);
-    background: rgb(0,0,0,0.9);
+    background: rgb(0, 0, 0, 0.9);
     z-index: 9999;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.imagen-contenedor.fullscreen img{
+.imagen-contenedor.fullscreen img {
     width: 100%;
     height: 100%;
 
@@ -188,14 +188,14 @@ body{
     max-width: 685px;
 }
 
-.descripcion-ubicacion h4{
+.descripcion-ubicacion h4 {
     margin-left: 1rem;
     margin-bottom: -1cap;
     margin-top: 2cap;
 
 }
 
-.descripcion-ubicacion b{
+.descripcion-ubicacion b {
     font-weight: bold;
 
 }
@@ -216,6 +216,7 @@ body{
     margin-top: 55rem;
     margin-left: 90rem;
 }
+
 /* Contenedor general */
 #reseña-historica {
     padding: 4rem 2rem;
@@ -233,19 +234,20 @@ body{
 /* Párrafo */
 .contenido-reseña p {
     max-width: 800px;
-    margin: 0 auto; /* centra el párrafo */
+    margin: 0 auto;
+    /* centra el párrafo */
     font-size: 1.1rem;
     line-height: 1.7;
     color: #555;
     text-align: justify;
 }
 
-.contenido-reseña b{
+.contenido-reseña b {
     font-weight: bold;
 
 }
 
-.contenido-reseña h4{
+.contenido-reseña h4 {
     margin-left: -28cap;
     margin-bottom: 1rem;
     margin-top: 2rem;
@@ -280,10 +282,10 @@ body{
 
 @media (max-width: 920px) {
 
-.encuentro{
-    
+    .encuentro {
 
-flex-wrap: wrap;
+
+        flex-wrap: wrap;
 
     }
 
@@ -293,7 +295,7 @@ flex-wrap: wrap;
 .imagen-folclore {
     height: 300px;
     width: 300px;
-    
+
     object-fit: cover;
     display: flex;
     cursor: pointer;
@@ -361,6 +363,7 @@ flex-wrap: wrap;
         opacity: 0;
         transform: translateY(-30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -372,6 +375,7 @@ flex-wrap: wrap;
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);

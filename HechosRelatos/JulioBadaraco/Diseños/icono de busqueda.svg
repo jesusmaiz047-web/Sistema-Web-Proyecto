@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="20.491791"
+   height="20.354992"
+   viewBox="0 0 20.491791 20.354992"
+   fill="none"
+   version="1.1"
+   id="svg3"
+   sodipodi:docname="icono de busqueda.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs3" />
+  <sodipodi:namedview
+     id="namedview3"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="11.899329"
+     inkscape:cx="0.96644106"
+     inkscape:cy="12.395657"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="-9"
+     inkscape:window-y="1116"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3" />
+  <path
+     d="M 19.727021,19.590222 15.455008,15.044498"
+     stroke="#000000"
+     stroke-width="1.52954"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="path1" />
+  <path
+     d="m 9.2473753,17.4679 c 4.6853787,0 8.4834317,-3.739112 8.4834317,-8.351527 0,-4.612491 -3.798053,-8.35160303 -8.4834317,-8.35160303 -4.684545,0 -8.48260533,3.73911203 -8.48260533,8.35160303 0,4.612415 3.79806033,8.351527 8.48260533,8.351527 z"
+     stroke="#000000"
+     stroke-width="1.52954"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="path2" />
+</svg>

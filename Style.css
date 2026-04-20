@@ -33,6 +33,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    backdrop-filter: blur(5px);
 }
 
 span {
@@ -371,14 +372,14 @@ span {
 /* FOOTER */
 
 .pie-pagina {
-    position: relative;
-    bottom: 0;
     width: 100%;
     background-color: var(--color-mar);
     color: var(--color-texto);
-    padding: 40px 0;
-    margin-top: 50px;
+    padding: 20px 0;
+    text-align: center;
     border-top: 4px solid var(--color-tierra);
+
+    
 }
 
 .grupo-1 {
@@ -387,8 +388,8 @@ span {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    padding: 20px 0;
+    grid-gap: 15px;
+    padding: 0; 
 }
 
 .grupo-1 .box figure {
@@ -400,18 +401,19 @@ span {
 }
 
 .grupo-1 .box figure img {
-    width: 200px;
+    width: auto;
+    height: 50px
 }
 
 .grupo-1 .box h2 {
-    color: var(--color-texto);
+    color: var(--color-pergamino);
     margin-bottom: 25px;
     font-size: 20px;
 }
 
 .grupo-1 .box p {
     color: var(--color-texto);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 16px;
 }
 

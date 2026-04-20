@@ -19,7 +19,12 @@
     <header class="header1">
         <nav class="navs">
             <div class="logo">Ecos del <span class="sanfrascisco">Pasado</span></div>
-            <ul class="nav-links">
+            
+            <button id="menu-toggle" class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
                 <li class="dropdown">
                     <a href="#">Lugares ▾</a>
                     <ul class="submenu">
@@ -62,16 +67,13 @@
         </section>
 
         <section class="propiedades-ubicacion">
-
             <div class="titulo-ubicacion">
                  <h2>Ubicación Geográfica</h2>
             </div>
-
             
             <div class="fila-ubicacion">
                 <div class="imagen-contenedor">
                     <img src="Diseños/ubicacion.png" alt="imagenUbicacion">
-
                 </div>
 
                 <div class="descripcion-ubicacion">
@@ -94,13 +96,14 @@
                     </p>
                 </div>
             </div>
+        </section>
 
-            <section class="propiedades-ubicacion">
-                <div class="titulo-ubicacion">
-                    <h2>Reseña Histórica</h2>
-                </div>
-                <div class="fila-ubicacion">
-                    <div class="descripcion-ubicacion">
+        <section class="propiedades-ubicacion">
+            <div class="titulo-ubicacion">
+                <h2>Reseña Histórica</h2>
+            </div>
+            <div class="fila-ubicacion">
+                <div class="descripcion-ubicacion">
                     <p class="texto-reseña">Es una memoria histórica que nació y creció desde el Convento San Francisco, el Río
                         Manzanares,
                         el Castillo de Santa María de las Cabeza y el Castillo San Antonio de la Eminencia. La fecha
@@ -109,8 +112,14 @@
                         (antiguo cementerio) y sus pintorescas calles, Urica, Luneta, las Flores, Santa María, Sucre y
                         el Cementerio hoy Badaracco Bermúdez, ha sido cuna y jardín de ilustres personajes y de
                         acontecimientos particulares. </p> 
-
                 </div>
+                <div class="contenedor-imagenes-reseña">
+                    <div class="imagen-contenedor">
+                        <img src="Diseños/cielo.png" alt="imagenUbicacion">
+                    </div>
+                </div>
+            </div>
+        </section>
                 <div class="contenedor-imagenes-reseña">
                     <div class="imagen-contenedor">
                         <img src="Diseños/cielo.png" alt="imagenUbicacion">
@@ -119,41 +128,32 @@
                     
                 </div>
 
-                <section class="propiedades-ubicacion">
-                <div>
-                    <div class="titulo-ubicacion">
-                        <h2>HEBREOS 11</h2>
-                    </div>
-                    <div>
-                        <p class="texto-reseña">
-                          El General de Brigada Domingo Montes nació en este barrio el 1 de Noviembre de 1784, en la
-                        calle
-                        Úrica. Donde tuvo un gran desempeño en el servicio militar al lado del General en Jefe, José
-                        Francisco Bermúdez, Santiago Mariño, Antonio José de Sucre, Francisco Vicente Parejo y Bernardo
-                        Bermúdez. En esta misma calle, nació el Dr. Jesús Sanabria Bruzual el 21 de enero de 1867,
-                        cofundador de la Sociedad Médica, en 1916 y su presidente entre 1919 y 1920. En la calle “Las
-                        Flores” nació y vivió Don José Acuña, decano de los periodistas orientales, fundador en 1925 del
-                        periódico “Renacimiento”, maestro de escuela; diputado a la Asamblea Legislativa del Estado y
-                        Presidente de ese cuerpo en 1937. <br><br>
-                        El 17 de enero de 1929 un terremoto de magnitud 7° sorprende a Cumaná, destruyendo más de
-                        3500
-                        viviendas, el Teatro de Cumaná (hoy Catedral), destrucción parcial de la Iglesia Santa Inés, del
-                        Castillo San Antonio de la Eminencia entre otras obras civiles de importancia para la ciudad,
-                        pero hubo una calle, donde sus viviendas no sufrieron prácticamente daños, la calle Las Flores
-                        de San Francisco, motivo por el cual la llamaron calle “La mano de Dios”, porque solo Dios podía
-                        haber obrado de tal manera que las casas de esa calle se mantuviesen intactas ante el devastador
-                        sismo. <br><br>
-                        </p>
-                    </div>
-                    <div>
-                        <p></p>
-                           
-                </div>
-
-
-                
-
-            </section>
+        <section class="propiedades-ubicacion">
+            <div class="titulo-ubicacion">
+                <h2>HEBREOS 11</h2>
+            </div>
+            <div class="texto-reseña-full">
+                <p class="texto-reseña">
+                    El General de Brigada Domingo Montes nació en este barrio el 1 de Noviembre de 1784, en la
+                    calle
+                    Úrica. Donde tuvo un gran desempeño en el servicio militar al lado del General en Jefe, José
+                    Francisco Bermúdez, Santiago Mariño, Antonio José de Sucre, Francisco Vicente Parejo y Bernardo
+                    Bermúdez. En esta misma calle, nació el Dr. Jesús Sanabria Bruzual el 21 de enero de 1867,
+                    cofundador de la Sociedad Médica, en 1916 y su presidente entre 1919 y 1920. En la calle “Las
+                    Flores” nació y vivió Don José Acuña, decano de los periodistas orientales, fundador en 1925 del
+                    periódico “Renacimiento”, maestro de escuela; diputado a la Asamblea Legislativa del Estado y
+                    Presidente de ese cuerpo en 1937. <br><br>
+                    El 17 de enero de 1929 un terremoto de magnitud 7° sorprende a Cumaná, destruyendo más de
+                    3500
+                    viviendas, el Teatro de Cumaná (hoy Catedral), destrucción parcial de la Iglesia Santa Inés, del
+                    Castillo San Antonio de la Eminencia entre otras obras civiles de importancia para la ciudad,
+                    pero hubo una calle, donde sus viviendas no sufrieron prácticamente daños, la calle Las Flores
+                    de San Francisco, motivo por el cual la llamaron calle “La mano de Dios”, porque solo Dios podía
+                    haber obrado de tal manera que las casas de esa calle se mantuviesen intactas ante el devastador
+                    sismo. <br><br>
+                </p>
+            </div>
+        </section>
     </main>
 
     <footer class="pie-pagina">
@@ -190,7 +190,7 @@
     </div>
      
     <div id="modal-fullscreen" class="modal-full">
-        <span class="cerrar-modal">&times;</span>
+        <span id="cerrar-modal" class="cerrar-modal">&times;</span>
         <img class="imagen-expandida" id="foto-grande" src="">
     </div>
 

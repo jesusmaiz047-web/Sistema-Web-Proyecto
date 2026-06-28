@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,26 +7,22 @@
     <link rel="stylesheet" href="Style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
 </head>
 
 <body>
-
+    <!--Titulo central-->
     <header class="header1">
         <nav class="navs">
             <div class="logo">Ecos del <span class="sanfrascisco">Pasado</span></div>
 
+            <!--Boton para activar menu hamburguesa-->
             <button id="menu-toggle" class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </button>
-
+            <!--Aqui van los enlaces a otros index-->
             <ul class="nav-links" id="nav-links">
-                <li><a href="index.html">Inicio</a></li>
+                
                 <li class="dropdown">
                     <a href="#">Lugares ▾</a>
                     <ul class="submenu">
@@ -49,19 +44,22 @@
             </ul>
         </nav>
     </header>
-
+        <!--Contenido principal-->
     <main>
-       
+                            <!--Seccion de bienvenida-->
+        <!--carrusel de imágenes-->
         <section id="hero" class="hero-moderno">
             <div class="carrusel-bg">
                 <div class="carrousel-slide">
-                    <img src="Diseños/portada.jpg" alt="Portada San Francisco">
-                    <img src="Diseños/portada.jpg" alt="Paisaje 2">
-                    <img src="Diseños/portada.jpg" alt="Paisaje 3">
-                    <img src="Diseños/portada.jpg" alt="Paisaje 4">
+                    <img src="Diseños/portada1.jpg" alt="Portada San Francisco">
+                    <img src="Diseños/portada2.jpg" alt="Paisaje 2">
+                    <img src="Diseños/portada3.jpg" alt="Paisaje 3">
+                    <img src="Diseños/portada4.jpg" alt="Paisaje 4">
                 </div>
                 <div class="overlay-hero"></div>
             </div>
+
+        <!--Titulo central-->
             <div class="contenido-hero">
                 <div class="hero-texto-caja">
                     <span class="hero-tag">Ecos del Pasado</span>
@@ -72,7 +70,7 @@
             </div>
         </section>
 
-      
+        <!--Seccion de bienvenida-->
         <section id="bienvenida" class="seccion-bienvenida container-seccion">
             <div class="grid-2-columnas alineacion-centro">
                 <div class="collage-bienvenida">
@@ -99,7 +97,7 @@
             </div>
         </section>
 
-      
+        <!--Seccion de estadisticas-->
         <section class="seccion-estadisticas">
             <div class="container-seccion" style="padding: 3rem 2rem;">
                 <div class="grid-4-columnas">
@@ -127,7 +125,7 @@
             </div>
         </section>
 
-       
+            <!--Seccion de historia-->
         <section id="historia" class="seccion-historia bg-claro">
             <div class="container-seccion">
                 <div class="grid-2-columnas alineacion-centro">
@@ -139,13 +137,13 @@
                         <p class="texto-historia-p mt-2">Sus pintorescas calles—Urica, Luneta, Las Flores, Santa María, Sucre y Cementerio (hoy Badaracco Bermúdez)—han sido cuna y jardín de ilustres personajes y acontecimientos particulares que forjaron la identidad de nuestra región.</p>
                     </div>
                     <div class="imagen-contenedor">
-                        <img src="Diseños/cielo.png" alt="Historia de San Francisco" class="img-fluida img-sombra borde-redondeado">
+                        <img src="Diseños/1.jpg" alt="Historia de San Francisco" class="img-fluida img-sombra borde-redondeado">
                     </div>
                 </div>
             </div>
         </section>
 
-       
+            <!--Dicho-->
         <section class="seccion-cita">
             <div class="overlay-cita"></div>
             <div class="container-seccion contenido-cita text-center">
@@ -154,7 +152,7 @@
             </div>
         </section>
 
-       
+        <!--Seccion de Lugares -->
         <section id="atractivos" class="seccion-tarjetas container-seccion">
             <div class="header-seccion text-center">
                 <h2>Lugares Emblemáticos</h2>
@@ -180,7 +178,7 @@
             </div>
         </section>
 
-       
+        <!--Seccion de personajes y hechos-->
         <section id="personajes" class="seccion-personajes bg-oscuro-textura">
             <div class="container-seccion">
                 <div class="header-seccion text-center color-blanco">
@@ -202,7 +200,7 @@
             </div>
         </section>
 
-       
+        <!--Seccion de ubicacion-->
         <section id="ubicacion" class="seccion-ubicacion bg-claro">
             <div class="container-seccion">
                 <div class="grid-2-columnas reversa alineacion-centro">
@@ -224,7 +222,7 @@
             </div>
         </section>
 
-        
+        <!--Seccion de cultura y tradiciones-->
         <section id="cultura" class="seccion-cultura">
             <div class="container-seccion text-center">
                 <div class="header-seccion">
@@ -264,7 +262,7 @@
             </div>
         </section>
 
-        <!-- Galería Visual Tipo Grid -->
+        <!--Seccion de galeria-->
         <section class="seccion-galeria bg-claro">
             <div class="container-seccion text-center">
                 <div class="header-seccion">
@@ -282,7 +280,7 @@
             </div>
         </section>
 
-        <!-- Llamado a la acción final -->
+        <!--Seccion de CTA-->.
         <section class="seccion-cta bg-oscuro-textura text-center">
             <div class="container-seccion" style="padding: 6rem 2rem;">
                 <h2 style="font-size: 2.5rem; margin-bottom: 1rem; color: white;">¿Listo para adentrarte en el pasado?</h2>
@@ -295,6 +293,7 @@
         </section>
     </main>
 
+    <!--Pie de pagina-->
     <footer class="pie-pagina">
         <div class="grupo-1">
             <div class="box">
@@ -306,11 +305,9 @@
             </div>
             <div class="box">
                 <h2>SOBRE NOSOTROS</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, perferendis!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, fuga!</p>
+                <p>Creado por Estudiantes de la UPTOS</p>
+                <p>Jesús Maiz, Jesús Garcia, Jesús Carrera, Miguel Pulido</p>
             </div>
-
-
 
             <div class="box">
                 <h2>SIGUENOS</h2>
@@ -334,11 +331,10 @@
     </div>
 
     <div id="modal-fullscreen" class="modal-full">
-        <span id="cerrar-modal" class="cerrar-modal">&times;</span>
+        <span id="cerrar-modal" class="cerrar">&times;</span>
         <img class="imagen-expandida" id="foto-grande" src="">
     </div>
 
     <script src="js/script.js"></script>
 </body>
-
 </html>

@@ -12,7 +12,7 @@
 }
 
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -21,13 +21,14 @@ body {
     color: var(--color-texto);
 }
 
-/*Header*/
+/* --- CABECERA Y NAVEGACIÓN --- */
 .header1 {
     color: white;
     background-color: var(--color-mar);
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .logo {
@@ -44,7 +45,6 @@ body {
     margin: 0 auto;
     max-width: 1200px;
     font-family: sans-serif;
-
 }
 
 .nav-links {
@@ -55,19 +55,18 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    font-size: 700;
+    font-size: 1.1rem;
     color: aliceblue;
-    text-decoration: none;
     text-shadow: 1px 1px 5px rgb(0, 0, 0);
     font-weight: 600;
     transition: 0.3s ease;
-
+    position: relative;
 }
 
 .nav-links a::after {
     content: "";
     position: absolute;
-    width: 0px;
+    width: 0;
     height: 2px;
     left: 0;
     bottom: -5px;
@@ -79,47 +78,16 @@ body {
     width: 100%;
 }
 
-
 .nav-links li:hover {
     transform: scale(1.1);
     transition: 0.15s;
 }
 
-
-
-#hero {
-    min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Diseños/portada.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: beige;
-    padding: 0 1rem;
-
-}
-
-#hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    animation: fadeInDown 1s ease;
-}
-
-#hero p {
-    font-size: 1.3rem;
-    opacity: 0.9;
-    animation: fadeInUp 1s ease;
-}
-
-/*Otras paginas*/
+/* --- SUBMENÚ DESPLEGABLE --- */
 .dropdown {
     position: relative;
 }
 
-/* Submenú oculto */
 .submenu {
     display: none;
     position: absolute;
@@ -131,6 +99,7 @@ body {
     margin: 0;
     min-width: 200px;
     border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .submenu li a {
@@ -148,230 +117,339 @@ body {
     display: block;
 }
 
-/*Imagen de la ubicacion*/
-
-.fila-ubicacion {
+/* --- SECCIÓN HERO (PORTADA) ---++ */
+#hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Diseños/portada.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
-    gap: 40px;
-}
-
-.imagen-contenedor {
-    width: 650px;
-    height: 450px;
-    overflow: hidden;
-    margin-left: 2rem;
-}
-
-.imagen-contenedor img {
-    width: 75%;
-    height: 80%;
-    object-fit: cover;
-    display: block;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border-radius: 10px;
-    margin-left: 6rem;
-}
-
-.imagen-contenedor.fullscreen {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    width: calc(100vw - 20px);
-    height: calc(100vh - 20px);
-    background: rgb(0, 0, 0, 0.9);
-    z-index: 9999;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    color: beige;
+    padding: 0 1.5rem; /* NO TOCAR evitar que el texto toque los bordes laterales */
 }
 
-.imagen-contenedor.fullscreen img {
-    width: 100%;
-    height: 100%;
-
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    max-width: 800px;
+    animation: fadeInDown 1s ease;
 }
 
-.descripcion-ubicacion {
-    max-width: 685px;
+#hero p {
+    font-size: 1.3rem;
+    max-width: 600px;
+    opacity: 0.9;
+    animation: fadeInUp 1s ease;
 }
 
-.descripcion-ubicacion h4 {
-    margin-left: 1rem;
-    margin-bottom: -1cap;
-    margin-top: 2cap;
-
-}
-
-.descripcion-ubicacion b {
-    font-weight: bold;
-
+/* --- SECCIÓN HISTORIA Y UBICACIÓN --- */
+#propiedades {
+    padding: 4rem 2rem;
 }
 
 .historia h2 {
-    margin-left: 6rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+}
+
+.fila-ubicacion {
+    display: flex;
+    flex-wrap: wrap; /* Aqui salta la linea por si no cabe */
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.imagen-contenedor {
+    flex: 1;
+    min-width: 280px; /* Tamaño mínimo para pantallas de cel viejos */
+    max-width: 500px;
+    display: flex;
+    flex-direction: column; 
+    gap: 1.5rem;          
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.imagen-contenedor img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .basilica2 {
-    width: 20%;
-    height: 30%;
-    position: absolute;
-    object-fit: cover;
-    display: flex;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    display: block;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
-    margin-top: 55rem;
-    margin-left: 90rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Contenedor general */
+.descripcion-ubicacion {
+    flex: 1.2;
+    min-width: 280px;
+    max-width: 650px;
+}
+
+.descripcion-ubicacion h4 {
+    font-size: 1.3rem;
+    color: var(--color-mar);
+    margin-top: 1.8rem;
+    margin-bottom: 0.6rem;
+}
+
+.descripcion-ubicacion p {
+    margin-bottom: 1rem;
+    color: #444;
+    text-align: justify;
+}
+
+/* --- SECCIÓN TRADICIONES Y FE (DISEÑO ZIGZAG) --- */
 #reseña-historica {
     padding: 4rem 2rem;
     background-color: #f0f0f0;
     text-align: center;
 }
 
-/* Título centrado */
 .titulo-reseña {
     font-size: 2rem;
     margin-bottom: 2rem;
     color: #333;
 }
 
-/* Párrafo */
-.contenido-reseña p {
+.intro-reseña {
     max-width: 800px;
-    margin: 0 auto;
-    /* centra el párrafo */
+    margin: 0 auto 3rem auto;
     font-size: 1.1rem;
     line-height: 1.7;
     color: #555;
-    text-align: justify;
 }
 
-.contenido-reseña b {
-    font-weight: bold;
-
-}
-
-.contenido-reseña h4 {
-    margin-left: -28cap;
-    margin-bottom: 1rem;
-    margin-top: 2rem;
-
-}
-
-
-
-
-/*imagenes de las tradiciones*/
-.imagen-patronales {
-    width: 20%;
-    height: 30%;
-    position: absolute;
-    object-fit: cover;
+.bloque-tradicion {
     display: flex;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border-radius: 10px;
-    margin-left: 85rem;
-    margin-top: -22rem;
-}
-
-.encuentro {
-
-    display: flex;
-    margin-left: 110px;
-    padding: 0 2px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto 4rem auto;
 }
 
-@media (max-width: 920px) {
-
-    .encuentro {
-
-
-        flex-wrap: wrap;
-
-    }
-
+.img-izquierda {
+    flex-direction: row;
 }
 
+.img-derecha {
+    flex-direction: row-reverse;
+}
 
-.imagen-folclore {
-    height: 300px;
-    width: 300px;
-
+.img-zigzag {
+    width: 45%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     object-fit: cover;
-    display: flex;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border-radius: 10px;
-    margin-left: rem;
-    margin-top: 0px;
-    margin-right: 17px;
 }
 
-.texto {
-    margin-right: 40px;
+.texto-tradicion {
+    width: 50%;
+    text-align: left;
 }
 
-.imagen-diablo {
-    width: 20%;
-    height: 30%;
-    position: absolute;
-    object-fit: cover;
-    display: flex;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border-radius: 10px;
-    margin-left: 85rem;
-    margin-top: -20rem;
+.texto-tradicion h4 {
+    font-size: 1.5rem;
+    color: var(--color-mar);
+    margin-bottom: 1rem;
 }
 
-.imagen-pesebre {
-    width: 20%;
-    height: 30%;
-    position: absolute;
-    object-fit: cover;
-    display: flex;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border-radius: 10px;
-    margin-top: -8rem;
-    margin-left: 40px;
+.texto-tradicion p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 1rem;
 }
 
+.lista-tradicion {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    color: #444;
+}
 
+.lista-tradicion li {
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+}
 
+/* FOOTER */
 
-/*Footer*/
 .pie-pagina {
-    background-color: #2b2b2b;
-    color: white;
+    background-color: #00185eda;;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 1.5rem;
     margin-top: auto;
 }
 
-.pie-pagina a {
-    color: #ff9800;
+.grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    padding: 0;
+}
+
+.grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grupo-1 .box figure img {
+    width: auto;
+    height: 50px;
+}
+
+.grupo-1 .box h2 {
+    color: var(--color-pergamino);
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.grupo-1 .box p {
+    color: var(--color-texto);
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.grupo-1 .box .red-social a {
+    display: inline-block;
     text-decoration: none;
-    margin: 0 0.5rem;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #1a1a1a;
+    margin-right: 10px;
+    background-color: #f2f2f2;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 300ms ease;
+    font-size: 20px;
+}
+
+.grupo-1 .box .red-social a:hover {
+    background-color: #ffc107;
+    color: #000;
 }
 
 
+footer p {
+    margin: 8px 0;
+    font-size: 0.9rem;
+    max-width: 800px;
+}
 
 
-/* Animaciones */
+/* responsive (telefonos y tablets) */
+
+@media (max-width: 768px) {
+    .navs {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .nav-links {
+        gap: 1.2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    /* Submenú adaptado */
+    .submenu {
+        position: static; /* Ya no flota para que no tape otros elementos */
+        box-shadow: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Reduce textos en portada para pantallas pequeñas */
+    #hero h1 {
+        font-size: 2.2rem;
+    }
+
+    #hero p {
+        font-size: 1.1rem;
+    }
+
+    /* Ajuste de márgenes de las secciones generales */
+    #propiedades, #reseña-historica {
+        padding: 2.5rem 1rem; /* aqui hara menos espacio a los lados para dar más espacio al contenido */
+    }
+
+    /* Transformación del ZigZag en bloques verticales */
+    .bloque-tradicion.img-izquierda,
+    .bloque-tradicion.img-derecha {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .img-zigzag, .texto-tradicion {
+        width: 100%; /* NO TOCAR JAMAS ocupa todo el ancho de la pantalla del telefono */
+        max-width: 100%;
+    }
+
+    .texto-tradicion {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para telefonos pequeños */
+    #hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .logo {
+        font-size: 1.4rem;
+    }
+    
+    .nav-links {
+        gap: 0.8rem;
+    }
+    
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* --- ANIMACIONES --- */
 @keyframes fadeInDown {
     from {
         opacity: 0;
         transform: translateY(-30px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -383,55 +461,8 @@ body {
         opacity: 0;
         transform: translateY(30px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-/* FOOTER */
-.pie-pagina {
-    background-color: #2b2b2b;
-    color: white;
-    text-align: center;
-    padding: 1.5rem;
-    margin-top: auto;
-}
-
-.pie-pagina a {
-    color: #ff9800;
-    text-decoration: none;
-    margin: 0 0.5rem;
-}
-
-.pie-pagina a:hover {
-    text-decoration: underline;
-}
-
-/* FOOTER */
-
-footer {
-    background-color: var(--color-mar);
-    color: #ffffff;
-    padding: 30px 50px;
-    /* Aumentamos el padding lateral para que no toque el borde */
-    text-align: left;
-    /* Alineación hacia la izquierda */
-    width: 100%;
-    border-top: 4px solid var(--color-tierra);
-}
-
-footer p {
-    margin: 8px 0;
-    font-size: 0.9rem;
-    max-width: 800px;
-    /* Limita el ancho del texto para que no se estire demasiado */
-}
-
-.footer-credits {
-    font-weight: bold;
-    display: block;
-    /* Hace que los nombres de los autores resalten en su propia línea */
-    margin-top: 10px;
 }

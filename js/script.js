@@ -46,7 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
- 
     const menuToggle = document.getElementById("menu-toggle");
     const navLinks = document.getElementById("nav-links");
 
@@ -55,7 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
             e.stopPropagation();
             navLinks.classList.toggle("active");
 
-           
             const icon = menuToggle.querySelector("i");
             if (icon) {
                 if (navLinks.classList.contains("active")) {
@@ -78,7 +76,6 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 
-       
         document.addEventListener("click", (e) => {
             if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
                 navLinks.classList.remove("active");
